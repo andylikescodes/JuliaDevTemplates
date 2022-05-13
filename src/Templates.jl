@@ -1,6 +1,6 @@
 using PkgTemplates
 
-function base(path)
+function base(path, name)
     t = Template(; 
         user="andylikescodes",
         authors="Andy Liang",
@@ -13,5 +13,8 @@ function base(path)
             AppVeyor(),
         ],
     )
+    
+    generate(name, t)
+    
     return t
 end 
