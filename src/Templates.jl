@@ -1,5 +1,5 @@
 
-function base(path, name)
+function development(path, name)
     t = Template(; 
         user="andylikescodes",
         authors="Andy Liang",
@@ -17,3 +17,16 @@ function base(path, name)
     
     return t
 end 
+
+function base(path, name)
+    t = Template(; 
+        user="andylikescodes",
+        authors="Andy Liang",
+        license="MIT",
+        dir=path,
+    )
+    
+    generate(name, t)
+    
+    return t
+end

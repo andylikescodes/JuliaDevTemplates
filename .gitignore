@@ -5,3 +5,5 @@
 ./test_pkg
 
 test/test_pkg/
+
+test/test_pkg_2/

@@ -8,6 +8,6 @@ using PkgTemplates
 include("Templates.jl")
 
 # Exports
-export base
+export development, base
 
 end
