@@ -1,8 +1,3 @@
-using JuliaDevTemplates
-using Test
+using SafeTestsets
 
-@testset "JuliaDevTemplates.jl" begin
-    # Write your tests here.
-    t = base()
-    @test t.user == "andylikescodes"
-end
+@safetestset "template tests" begin include("template_tests.jl") end
