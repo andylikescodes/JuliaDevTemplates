@@ -1,4 +1,3 @@
-using PkgTemplates
 
 function base(path, name)
     t = Template(; 
